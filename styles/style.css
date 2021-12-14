@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* Comienzo index.html */
+.conteiner{
+    width: 100%;
+}
+header{
+    height: 100vh;
+}
+header nav{
+    height: 80px;
+}
+header nav ul{
+    display: grid;
+    grid-template-areas: 
+            "a b c";
+    justify-content: center;
+    column-gap: 40px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+header nav ul li{
+    list-style-type: none;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #841617;
+}
+header div h1{
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/portada_sir_pipo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: whitesmoke;
+    font-size: 80px;
+    font-variant: small-caps;
+}
+.gin{
+    display: grid;
+    grid-template-rows: 1fr, 2fr;
+    padding-bottom: 20px;          
+}
+.gin h2{
+    grid-row: 1 / 2;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-size: 30px;
+    color: #841617;
+}
+.gin-img{
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.gin-img img{
+    margin: 0 auto;
+    width: 250px;
+    height: auto;
+    transition: height 4s;
+}
+.gin-img img:hover{
+    height: 200px;
+    width: 200px;
+}
+.sections{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    line-height: 40px;
+    background-image: linear-gradient(to bottom, #841617, #8A7D5C);
+    color: whitesmoke;
+}
+.sections h2{
+    font-size: 30px;
+}
+.sections p{
+    font-size: 25px;
+}
+.footer{
+    background-color: #FAF9F8;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.footer_1{
+    margin-top: 100px;
+    margin-bottom: 30px;    
+}
+.footer p{
+    font-size: 20px;
+    font-variant: small-caps;
+    margin-bottom: 50px;
+    color: #6A6353
+}
+.footer_2 a{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.footer2{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: solid 1px #841617;
+    border-top: solid 1px #841617;
+}
+.footer2 a{
+    text-decoration: none;
+    color: #6A6353;
+    font-size: 25px;
+    font-variant: small-caps;
+    font-weight: lighter;
+}
+ /* Comienzo cocktails.html */
+.conteiner{
+    width: 100%;
+}
+header{
+    height: 100vh;
+}
+header nav{
+    height: 80px;
+}
+header nav ul{
+    display: grid;
+    grid-template-areas: 
+            "a b c";
+    justify-content: center;
+    column-gap: 40px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+header nav ul li{
+    list-style-type: none;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #841617;
+}
+.title2 h1{
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/enebro_bayas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: whitesmoke;
+    font-size: 80px;
+    font-variant: small-caps;
+}
+.cocktails{
+    display: grid;
+    grid-template-rows: 1fr, 2fr;
+    padding-bottom: 20px;          
+}
+.cocktails p{
+    grid-row: 1 / 2;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-size: 30px;
+    color: #841617;
+}
+.cocktails-img{
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.cocktails-img img{
+    margin: 0 auto;
+    width: 250px;
+    height: auto;
+    transition: all 3s;
+}
+.cocktails-img img:hover{
+    width: 300px;
+    height: auto;
+}
+/* medias queries */
+@media screen and (max-width: 320px) {
+    header nav ul li{
+        font-size: 10px;
+    }
+    .title h1{
+        align-items: flex-start;
+        font-size: 30px;
+        padding-top: 20px;
+    }
+    .gin h2{
+        font-size: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .gin-img{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .gin-img img{
+        width: 150px;
+        height: auto;
+        padding: 10px;
+    }
+    .sections{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        line-height: 30px;
+    }
+    .sections h2{
+        font-size: 20px;
+    }
+    .items p{
+        font-size: 1rem;
+    }
+    .footer_2 a img{
+        width: 25px;
+        height: auto;
+    }
+    .footer2{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column; 
+        padding-top: 20px;
+        padding-bottom: 20px;          
+    }
+    .footer2 a{
+        font-size: 1rem;
+    }
+    .title2 h1{
+        align-items: flex-start;
+        font-size: 30px;
+        padding-top: 20px;
+    }
+    .cocktails p{
+        font-size: 1rem;
+        padding: 30px 20px 10px 20px;
+    }
+    .cocktails-img{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .cocktails-img img{
+        width: 150px;
+        height: auto;
+        padding: 10px;
+    }
+}
